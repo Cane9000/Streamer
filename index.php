@@ -39,7 +39,7 @@
       fwrite($myfile, $comment)or die("Unable to write to file!");
          
       echo "<h2>Saved Config</h2>";
-      echo nl2br(file_get_contents( "www-config.txt" )); // get the contents, and echo it out.
+      echo nl2br(file_get_contents( "www-config.txt" )); 
    ?>
 
    </body>
