@@ -13,6 +13,7 @@
    <body>
       
       <a href="stream.php">Streamer</a>
+      <br>
       <a href="killer.php">Kill</a>
      
          <h2>Edit Config</h2>
