@@ -2,13 +2,13 @@
 
 #PLATFORM SCRIPT
 
-#GET CONFIG DATA FROM HTML DIR TO CONFIG FILE REMOVING CARRIAGE RETURNS 
-#sed 's/\r//' /var/www/html/newfile.txt > /var/www/html/config.txt
-#READ CONGIF
+#USE DOS2UNIX application to convert config file - removing carriage returns, etc 
 dos2unix www-config.txt
+
+#READ CONGIF
 . /var/www/html/www-config.txt;
 
-#PLAYLIST
+#PLAYLIST GENERATION
 ls /media/pi/9601-27A0/video/E*.mp4 -t > flist.txt;sed -i s/^/file\ \'/g flist.txt; sed -i  s/.mp4/.mp4\'/g /var/www/html/flist.txt
 x=0
 >playlist.txt
