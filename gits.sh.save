@@ -2,6 +2,5 @@
 git add *.*
 D=$(date)
 git commit -m $D
-mit"
 git push https://github.com/Cane9000/Streamer
 
