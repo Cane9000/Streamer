@@ -1,5 +1,7 @@
+
 git add *.*
-git commit -m "Comgit add *.*
-git commit -m "Commit"
+D=$(date)
+git commit -m $D
 mit"
-git push https://github.com/Cane9000/Streamer.gi
+git push https://github.com/Cane9000/Streamer
+
